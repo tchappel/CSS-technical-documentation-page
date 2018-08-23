@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <title>CSS Typography</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="menu-toggle">
+               <i class="fas fa-angle-double-left"></i>
+        </div>        
+        <header>CSS Typography</header>
+        <h2>Table of topics</h2>
+        <!-- anchor elements should point to elements with class .main-section -->
+        <!-- anchor text must be same as header text inside class .main-section -->
+        <a class="nav-link" href="#font_family">Font Family</a>
+        <a class="nav-link" href="#fallback_fonts">Fallback Font</a>
+        <a class="nav-link" href=""></a>
+        <a class="nav-link" href=""></a>
+        <a class="nav-link" href=""></a>
+
+    </nav>
+
+    <!-- #main-doc contains the page's main content -->
+    <main id="main-doc">
+        <h1>CSS Typohraphy</h1>
+        <div id="container">
+            <p>This is an extract from my precious notes about Web Development 🌹 &#11088; &#11088; &#11088; &#11088; &#11088;</p>
+            <p>Find below an explanation for the most common CSS properties that control typography.</p>
+            <!-- each section should contain an id same as title of section, use camel_case -->
+            <section class="main-section" id="font_family">
+                <!-- header contains the title of the section -->
+                <header>Font Family</header>
+                <p>To change the typeface of text on your web page, you can use the font-family property.</p>
+                <p>Pay attention to the following points:</p>
+                <ul>
+                    <li>When the name of a typeface consists of more than one word, it's a best practice to enclose the typeface
+                        name in quotes;</li>
+                    <li>The font specified in the stylesheet must be installed on a user's computer in order for that font to
+                        display when a user visits the web page; read more about
+                        <a href="https://www.cssfontstack.com/">web-safe fonts;</a>
+                    </li>
+                    <li>It's a good design decision to limit the number of typefaces used on a web page to 2 or 3.</li>
+                </ul>
+                <p>In the following example we set the font family of all h1 elements to "Garamond", and that of all p elements
+                    to "Courier New":</p>
+                <code>
+                    h1 {<br>
+                        font-family: Garamond;<br>
+                    }<br>
+                    <br>                    
+                    p {<br>
+                        font-family: "Courier New";<br>
+                    }<br>
+            </code>
+            </section>
+            <section class="main-section" id="fallback_fonts">
+                <header>Fallback Font</header>
+                <p>Fallback fonts are included in case a visitor's web browser does not support the first font.</p>
+                <p>Usually, more than one fallback font is included, two or three is standard.</p>
+                <code>
+                    h1 {<br>
+                        font-family: Georgia, serif;<br>
+                      }<br>
+            </code>
+                <p>In the Example above, the font-family property of all h1 elements is set to the value of "Georgia", with
+                    "serif" as a fallback font.</p>
+                <p>Use Generic font options such as:</p>
+                <ul>
+                    <li>serif</li>
+                    <li>sans-serif</li>
+                    <li>cursive</li>
+                    <li>monospace</li>
+                </ul>
+            </section>
+            <section class="main-section">
+                <header></header>
+            </section>
+            <section class="main-section">
+                <header></header>
+            </section>
+            <section class="main-section">
+                <header></header>
+            </section>
+        </div>
+    </main>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>

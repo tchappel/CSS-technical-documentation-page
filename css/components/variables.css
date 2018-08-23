@@ -1,0 +1,18 @@
+:root {
+  --font-family-primary: "Open Sans", sans-serif;
+
+  --font-size-h1-primary: 48px;
+  --font-size-header-primary: 38px;
+  --font-size-p-primary: 18px;
+
+  --font-weight-primary: 700;
+  --font-weight-secondary: 600;
+
+  --nav-bg-color: #3659a2;
+  --nav-bg-shadow-color: rgba(0, 0, 0, 0.06);
+  --h1-bg-color: #fff3d4;
+  --code-bg-color: #eeeeee;
+
+  --box-shadow-inner: inset 0 0 10px rgba(0, 0, 0, 0.2);
+  --box-shadow-inner-dk: inset 0 0 10px rgba(0, 0, 0, 0.5);  
+}

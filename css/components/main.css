@@ -1,0 +1,34 @@
+#main-doc {
+  font-family: var(--font-family-primary);
+  margin-left: 350px;
+  line-height: 2;
+}
+
+#container {
+  padding: 0 4rem 0;  
+  margin-top: 2rem;
+}
+
+#main-doc section {
+    margin-top: 8rem;
+}
+
+#main-doc h1 {
+  text-align: center;
+  font-size: var(--font-size-h1-primary);
+  color: #f9f1c2;
+
+  font-weight: var(--font-weight-primary);
+  background-color: #fb974a;
+  box-shadow: var(--box-shadow-inner);
+  padding: 1rem 0;
+}
+
+#main-doc header {
+    font-size: var(--font-size-header-primary);
+    font-weight: var(--font-weight-secondary);    
+}
+
+#main-doc p, #main-doc li {
+  
+}
