@@ -6,26 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
     <title>CSS Typography</title>
 </head>
 
 <body>
     <nav id="navbar">
-        <div id="menu-toggle">
-               <i class="fas fa-angle-double-left"></i>
-        </div>        
-        <header>CSS Typography</header>
-        <h2>Table of topics</h2>
-        <!-- anchor elements should point to elements with class .main-section -->
-        <!-- anchor text must be same as header text inside class .main-section -->
-        <a class="nav-link" href="#font_family">Font Family</a>
-        <a class="nav-link" href="#fallback_fonts">Fallback Font</a>
-        <a class="nav-link" href=""></a>
-        <a class="nav-link" href=""></a>
-        <a class="nav-link" href=""></a>
-
+        <div id="nav-menu" class="nav-menu">
+            <header>CSS Typography</header>
+            <h2>Table of topics</h2>
+            <!-- anchor elements should point to elements with class .main-section -->
+            <!-- anchor text must be same as header text inside class .main-section -->
+            <a class="nav-link" href="#font_family">font-family</a>
+            <a class="nav-link" href="#fallback_fonts">Fallback Font</a>
+            <a class="nav-link" href="#font_size">font-size</a>
+            <a class="nav-link" href="#font_weight">font_weight</a>
+            <a class="nav-link" href="#font_style">font-style</a>
+            <a class="nav-link" href="#text_align">text-align</a>
+            <a class="nav-link" href="#"></a>
+        </div>      
     </nav>
 
     <!-- #main-doc contains the page's main content -->
@@ -37,7 +36,7 @@
             <!-- each section should contain an id same as title of section, use camel_case -->
             <section class="main-section" id="font_family">
                 <!-- header contains the title of the section -->
-                <header>Font Family</header>
+                <header>font-family</header>
                 <p>To change the typeface of text on your web page, you can use the font-family property.</p>
                 <p>Pay attention to the following points:</p>
                 <ul>
@@ -80,15 +79,69 @@
                     <li>monospace</li>
                 </ul>
             </section>
-            <section class="main-section">
-                <header></header>
+            <section class="main-section" id="font_size">
+                <header>font-size</header>
+                <p>To change the size of text on your web page, you can use the font-size property.</p>
+                <code>
+                        p {<br>
+                            font-size: 18px;<br>
+                          }<br>
+                </code>
+                <p>In CSS, size can be assigned using relative values or absolute values:</p>
+                <ul>
+                    <li>Relative values are calculated based on the nearest ancestor element font size</li>
+                    <li>absolute values are not affected by the ancestor element font size</li>
+                    <li>Both relative and absolute values are inherited by descendant elements</li>
+                </ul>
             </section>
-            <section class="main-section">
-                <header></header>
+            <section class="main-section" id="font_weight">
+                <header>font-weight</header>
+                <p>In CSS, the font-weight property controls how thick or bold the element shall appear.</p>
+                <p>The values of font-weight can be defined with numbers ranging from 100 to 900</p>
+                <p>Keywords values can be set to normal, bold, lighter, bolder or inherit:</p>
+                <ul>
+                    <li>normal = 400</li>
+                    <li>bold = 700</li>
+                    <li>lighter/bolder are relative to the inherited font weight</li>
+                </ul>
+                <code>
+                        p { <br>
+                           &nbsp;&nbsp;font-weight: bold; <br>
+                          } <br>
+                </code>
             </section>
-            <section class="main-section">
-                <header></header>
+            <section class="main-section" id="font_style">
+                <header>font-style</header>
+                <p>this property can be used to add and remove italic style or oblique style to an element</p>
+                <p>there are 3 values:</p>
+                <ul>
+                    <li>italic</li>
+                    <li>oblique</li>
+                    <li>normal (removes italic or oblique style)</li>
+                </ul>
+                <p>If the font family does not have a specific italic or oblique typeface, the browser will simulate it by sloping the regular font face glyph.</p>
+                <code>
+                    span { <br>
+                        &nbsp;&nbsp;font-style: italic; <br>
+                    }
+                </code>
             </section>
+            <section class="main-section" id="text_align">
+                    <header>text-align</header>
+                    <p>To align text we can use the text-align property.</p>
+                    <p>The text-align property can be set to one of the following three values:</p>
+                    <ul>
+                        <li>left — aligns text to the left hand side of its parent element; this is the browser default alignment,</li>
+                        <li>center — centers aligns text inside of its parent element.</li>
+                        <li>right — aligns text to the right hand side of its parent element.</li>
+                    </ul>
+                    <p>This style is inherited by descendant elements (children).</p>
+                    <code>
+                            h1 {<br>
+                                &nbsp;&nbsp;text-align: right;<br>
+                              }<br>
+                    </code>
+                </section>
         </div>
     </main>
 

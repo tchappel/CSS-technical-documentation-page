@@ -1,7 +1,8 @@
 #main-doc {
   font-family: var(--font-family-primary);
-  margin-left: 350px;
   line-height: 2;
+  margin-left: 300px;
+  width: 80%;
 }
 
 #container {
